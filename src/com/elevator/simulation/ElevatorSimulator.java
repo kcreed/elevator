@@ -27,6 +27,7 @@ public class ElevatorSimulator {
 		e1.moveUp();
 		
 		
+		
 	}
 
 }
