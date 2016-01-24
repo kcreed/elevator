@@ -12,6 +12,7 @@ import com.elevator.elevator.Elevator;
 public class ElevatorSimulator {
 
 	Elevator e1 = new Elevator();
+	Elevator e2 = new Elevator();
 	/**
 	 * @param args
 	 */

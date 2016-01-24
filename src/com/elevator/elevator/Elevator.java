@@ -12,6 +12,7 @@ public class Elevator {
 	int floorMax = 0;
 	int floorMin = 0;
 	int currentFloor = 0;
+	Door door = new Door();
 	
 	public Elevator() {
 		
@@ -41,7 +42,18 @@ public class Elevator {
 		this.currentFloor = currentFloor;
 	}
 	
+	public void moveUp() {
+		
+	}
 	
+	public void moveDown() {
+		
+	}
+	
+	public String report() {
+		String report = "";
+		return report;
+	}
 	
 
 }

@@ -8,5 +8,7 @@ package com.elevator.elevator;
  *
  */
 public class Door {
+	
+	boolean open = false;
 
 }
