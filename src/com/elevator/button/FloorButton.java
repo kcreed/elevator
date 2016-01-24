@@ -7,6 +7,6 @@ package com.elevator.button;
  * @author Kevin
  *
  */
-public class FloorButton {
+public class FloorButton extends Button {
 
 }

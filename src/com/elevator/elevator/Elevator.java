@@ -9,10 +9,10 @@ package com.elevator.elevator;
  */
 public class Elevator {
 	
-	int floorMax = 0;
-	int floorMin = 0;
-	int currentFloor = 0;
-	Door door = new Door();
+	private int floorMax = 0;
+	private int floorMin = 0;
+	private int currentFloor = 0;
+	private Door door = new Door();
 	private String report;
 	
 	public Elevator() {
@@ -44,6 +44,9 @@ public class Elevator {
 	}
 	
 	public void moveUp() {
+		getFloorMax();
+		
+	
 		elevatorReport("I am moving up.");
 		
 	}
