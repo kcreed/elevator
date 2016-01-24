@@ -3,6 +3,9 @@
  */
 package com.elevator.elevator;
 
+import java.util.ArrayList;
+import com.elevator.button.*;
+
 /**
  * @author Kevin
  *
@@ -10,10 +13,11 @@ package com.elevator.elevator;
 public class Elevator {
 	
 	private int floorMax = 0;
-	private int floorMin = 0;
+	private int floorMin = 1;
 	private int currentFloor = 0;
 	private Door door = new Door();
 	private String report;
+	private ArrayList<ElevatorButton> buttons = new ArrayList<ElevatorButton>();
 	
 	public Elevator() {
 		
@@ -43,16 +47,16 @@ public class Elevator {
 		this.currentFloor = currentFloor;
 	}
 	
-	public void moveUp() {
-		getFloorMax();
-		
-	
-		elevatorReport("I am moving up.");
-		
+	public String moveUp() {
+		getFloorMax();	
+		String upReport = elevatorReport("I am moving up.");
+		return upReport;
 	}
 	
-	public void moveDown() {
-		elevatorReport("I am moving down.");
+	public String moveDown() {
+		getFloorMin();
+		String downReport = elevatorReport("I am moving down.");
+		return downReport;
 	}
 	
 	public String elevatorReport(String report) {				
