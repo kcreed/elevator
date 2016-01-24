@@ -61,6 +61,7 @@ public class Elevator {
 	
 	public String elevatorReport(String report) {				
 		this.report = report;
+		
 		return report;
 	}
 	
