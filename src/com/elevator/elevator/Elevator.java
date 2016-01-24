@@ -13,6 +13,7 @@ public class Elevator {
 	int floorMin = 0;
 	int currentFloor = 0;
 	Door door = new Door();
+	private String report;
 	
 	public Elevator() {
 		
@@ -43,15 +44,16 @@ public class Elevator {
 	}
 	
 	public void moveUp() {
+		elevatorReport("I am moving up.");
 		
 	}
 	
 	public void moveDown() {
-		
+		elevatorReport("I am moving down.");
 	}
 	
-	public String report() {
-		String report = "";
+	public String elevatorReport(String report) {				
+		this.report = report;
 		return report;
 	}
 	
